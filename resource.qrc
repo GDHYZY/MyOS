@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file alias="BG">bg.png</file>
+        <file alias="CLOSE">close1.png</file>
+    </qresource>
+</RCC>

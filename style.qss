@@ -1,0 +1,2 @@
+QWidget#MyOS{ background-color : red;
+border-style : outset;}
