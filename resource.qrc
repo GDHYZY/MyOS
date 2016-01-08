@@ -1,9 +1,9 @@
 <RCC>
-    <qresource prefix="/">
-        <file>style.qss</file>
-    </qresource>
     <qresource prefix="/image">
-        <file alias="BG">bg.png</file>
-        <file alias="CLOSE">close1.png</file>
+        <file alias="BG">recourse/bg.png</file>
+        <file alias="CLOSE">recourse/close1.png</file>
+        <file alias="COMPUTER">recourse/computer.png</file>
+        <file alias="DISPATCH">recourse/dispatch.png</file>
+        <file alias="MEMORY">recourse/memory.png</file>
     </qresource>
 </RCC>

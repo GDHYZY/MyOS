@@ -3,10 +3,13 @@
 
 #include <QWidget>
 #include <QPushButton>
-
-namespace Ui {
-class Widget;
-}
+#include <QTimer>
+#include <QCloseEvent>
+#include "mydispatchview.h"
+#include "mymemoryview.h"
+#include "mydispatchmode.h"
+#include "mymemorymode.h"
+#include "myfile.h"
 
 class Widget : public QWidget
 {
@@ -15,11 +18,32 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
+    int name;
+    void Init();
+    void InitConnect();
+    virtual void closeEvent(QCloseEvent *e);
+private slots:
+    void OpenDispatch();
+    void OpenMemory();
+    void OpenFile();
+
+    void deleteDispatchView();
+    void deleteMemoryView();
+    void deleteFile();
+    void UDVM();
+    void QUIT();
 
 private:
-    Ui::Widget *ui;
-    QPalette * palette;
-    QPushButton* pushbutton;
+    QPalette* m_palette;
+    QPushButton* m_closebtn;
+    QPushButton* m_dispatchbtn;
+    QPushButton* m_memorybtn;
+    QPushButton* m_filebtn;
+    QTimer* m_timer;
+
+    MyDispatchView* m_dispatch;
+    MyMemoryView* m_memory;
+    MyFile* m_file;
 };
 
 #endif // WIDGET_H

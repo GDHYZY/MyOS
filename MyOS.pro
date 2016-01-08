@@ -13,11 +13,28 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    mydispatchview.cpp \
+    mymemoryview.cpp \
+    mydispatchmode.cpp \
+    mymemorymode.cpp \
+    myfile.cpp \
+    myfilemode.cpp \
+    mytextedit.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    mydispatchview.h \
+    mymemoryview.h \
+    mydispatchmode.h \
+    mymemorymode.h \
+    myfile.h \
+    myfilemode.h \
+    mytextedit.h
 
-FORMS    += widget.ui
+FORMS    += \
+    mydispatchview.ui \
+    mymemoryview.ui \
+    myfile.ui
 
 RESOURCES += \
     resource.qrc
